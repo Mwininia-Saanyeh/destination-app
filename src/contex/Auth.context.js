@@ -13,7 +13,7 @@ function AuthContextProvider({ children }) {
   // login function
   const authLogin = async (email, password) => {
     setLoading(true);
-    await fetch("mentor-me-three-vercel.app/api/users/login", {
+    await fetch("https://encouraging-lime-cheetah.cyclic.app/api/users/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -37,7 +37,7 @@ function AuthContextProvider({ children }) {
   //signup function
   const authRegister = async (username, email, password) => {
     setLoading(true);
-    await fetch("mentor-me-three-vercel.app/api/users/register", {
+    await fetch("https://encouraging-lime-cheetah.cyclic.app/api/users/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
