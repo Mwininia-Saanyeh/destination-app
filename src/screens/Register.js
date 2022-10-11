@@ -24,8 +24,8 @@ function Register() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="form">
-      <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 m-3 p-3 bg-info">
+    <form onSubmit={handleSubmit} className="form min-vh-100">
+      <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 m-3 p-3 bg-info mx-auto my-auto">
         <div className="form-group m-2">
           <label htmlFor="username">username</label>
           <input
@@ -61,7 +61,7 @@ function Register() {
         </button>
         <div className="row">
           I already have an account
-          <Link to="https://encouraging-lime-cheetah.cyclic.app/login" className="nav-link">
+          <Link to="/" className="nav-link">
             Login
           </Link>
         </div>
