@@ -1,0 +1,57 @@
+.firstrow{
+    display: flex;
+    gap: 20px;
+  }
+  .secondrow{
+    display: flex;
+    gap: 20px;
+  }
+  img{
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+  }
+
+
+
+
+
+  
+  .card{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: rgb(236, 181, 113);
+    width: 500px;
+    text-align: center;
+    align-content: center;
+  }
+  .products{
+    width: 300px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  .card h2{
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .card p{
+    margin: 5px;
+    font-size: 25px;
+  }
+  .card button{
+    font-size: 20px;
+    width: 1oopx;
+    margin-left: 120px;
+    background-color: darkorange;
+    color: white;
+  }
+
+  .form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+  }
