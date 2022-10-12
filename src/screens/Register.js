@@ -1,26 +1,26 @@
 import { useContext, useEffect, useState } from "react";
-import { AuthContext } from "../contex/Auth.context";
+// import { AuthContext } from "../contex/Auth.context";
 import { Link, useNavigate } from "react-router-dom";
 
 
 function Register() {
   const navigate = useNavigate();
 
-  const { success, loading,  authRegister } = useContext(AuthContext);
+  // const { user, loading,  authRegister } = useContext(AuthContext);
 
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  useEffect(() => {
-    if (success) {
-      navigate("/home");
-    }
-  });
+  // useEffect(() => {
+  //   if (user) {
+  //     navigate("/home");
+  //   }
+  // },[user]) ;
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    authRegister(username, email, password);
+    // authRegister(username, email, password);
   };
 
   return (
@@ -57,7 +57,7 @@ function Register() {
           />
         </div>
         <button type="submit" className="btn btn-primary m-2">
-          {loading ? "Loading..." : "Register"}
+        <Link to='/home'>login</Link>
         </button>
         <div className="row">
           I already have an account

@@ -1,24 +1,24 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import {AuthContext}  from "../contex/Auth.context";
+// import {AuthContext}  from "../contex/Auth.context";
 
 function Login() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const { success, loading, authLogin } = useContext(AuthContext);
+  // const { user, loading, authLogin } = useContext(AuthContext);
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  useEffect(() => {
-    if (success) {
-      navigate("/home");
-    }
-  });
+  // useEffect(() => {
+  //   if (user) {
+  //     navigate("/home");
+  //   }
+  // },[user]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    authLogin(email, password);
+    // authLogin(email, password);
   };
 
   return (
@@ -45,7 +45,7 @@ function Login() {
           />
         </div>
         <button type="submit" className="btn btn-primary m-2">
-          {loading ? "Loading..." : "Login"}
+        
         </button>
         <div>
           I don't have an account

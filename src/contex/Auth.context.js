@@ -36,6 +36,7 @@ function AuthContextProvider({ children }) {
 
   //signup function
   const authRegister = async (username, email, password) => {
+    console.log(username, email, password)
     setLoading(true);
     await fetch("https://encouraging-lime-cheetah.cyclic.app/api/users/register", {
       method: "POST",
