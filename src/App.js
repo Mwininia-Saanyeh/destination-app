@@ -16,19 +16,27 @@ import Eatry from './components/Eatry';
 import Hospital from './components/Hospital';
 import Hotel from './components/Hotel';
 import Commercialproperty from './components/Commercialproperty'
-
-
+import Contact from './screens/Contact';
+import Category from './screens/Category';
+import Bookform from './components/Bookform';
+import Orderform from './components/Orderform';
+import Header from './components/Header';
 
 function App() {
   return (
-    <div>
     
+    <div>
+    <Header/>
     
     <Routes>
        <Route path="/home" element={<Home/>}/>
        <Route path="/" element={<Login/>}/>
+       <Route path="/contact" element={<Contact/>}/>
        <Route path="/register" element={<Register/>}/>
+       <Route path="/book" element={<Bookform/>}/>
+       <Route path="/order" element={<Orderform/>}/>
        <Route path="/About" element={<About/>}/>
+       <Route path="/Category" element={<Category/>}/>
        <Route path="/school" element={<School/>}/>
        <Route path="/addeatery" element={<Addeatry/>}/>
        <Route path="/addschool" element={<Addschool/>}/>
@@ -44,6 +52,7 @@ function App() {
    
       
     </div>
+    
   );
 }
 

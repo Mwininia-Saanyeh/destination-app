@@ -24,14 +24,14 @@ function Addhotel({ submit }) {
   return (
     <>
       
-      <Header />
+      
       <div className="formContainer">
         <h3>Add New Hotel</h3>
         <form>
           <fieldset>
             <legend>Hotel Data</legend>
             <div className="names">
-              <div className="N">
+              <div className="form-group ">
                 <label>
                   Name
                   <input
@@ -44,7 +44,7 @@ function Addhotel({ submit }) {
               </div>
             </div>
             <div className="names">
-              <div className="W">
+              <div className="form-group">
                 <label>
                   Location
                   <input
@@ -55,7 +55,7 @@ function Addhotel({ submit }) {
                   />
                 </label>
               </div>
-              <div className="Y">
+              <div className="form-group">
                 <label>
                   {" "}
                  Services
@@ -67,7 +67,7 @@ function Addhotel({ submit }) {
                   />
                 </label>
               </div>
-              <div className="L">
+              <div className="form-group">
                 <label>
                   Address
                   <input
@@ -78,7 +78,7 @@ function Addhotel({ submit }) {
                   />
                 </label>
               </div>
-              <div className="L">
+              <div className="form-group">
                 <label>
                   Contact
                   <input
@@ -91,7 +91,7 @@ function Addhotel({ submit }) {
               </div>
             </div>
           </fieldset>
-          <button className="form" onClick={handleForm}>
+          <button className="btn btn-info" onClick={handleForm}>
             Add a Hotel
           </button>
         </form>

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {GoSignOut} from 'react-icons/go'
 function Header() {
   return (
     <div>
@@ -21,10 +21,13 @@ function Header() {
           <a class="nav-link" href="/about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/catecory">Category</a>
+          <a class="nav-link" href="/category">Category</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/">logout<GoSignOut/></a>
         </li>
        
       </ul>
@@ -37,9 +40,9 @@ function Header() {
         <option value=""> Add Commercial</option>
         <option value=""> Add Hospital</option>
       </select> */}
-
+{
       <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle show" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">Dropdown</a>
+          <a class="nav-link dropdown-toggle show">click to add service</a>
           <div class="dropdown-menu show collapse navbar-collapse " id="navbarColor01" >
             <ul class="navbar-nav me-auto ">
             <a class="dropdown-item" href="/addeatery">Add Eatery</a>
@@ -51,7 +54,7 @@ function Header() {
            
             </ul>
           </div>
-        </li>
+        </li> }
       <form class="d-flex">
         <input class="form-control me-sm-2" type="text" placeholder="Search" />
         <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>

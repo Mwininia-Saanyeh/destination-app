@@ -8,6 +8,7 @@ import NandonSnr from '../utils/NandonSnr.png';
 import wasec from '../utils/wasec.jpg'
 import daanibu from '../utils/daanibu.jpg';
 import tendercare from '../utils/tendercare.jpg';
+import Category from '../screens/Category';
 
 
 function School() {
@@ -21,22 +22,30 @@ function School() {
         <div className='card'>
         <h2>NJA College Of Education</h2>
         <img src={NJA} alt =""/>
+        <h3>Location : Tampaalipaani</h3>
+       <h3>GPS : XW-0003-2345</h3>
         </div>
        
 
         <div className='card'>
         <h2>UBIDS Adminstration</h2>
         <img src={uds} alt =""/>
+        <h3>Location : Kunfaabiela</h3>
+       <h3>GPS : XW-0003-2345</h3>
         </div>
 
         <div className='card'>
         <h2>Wa Polytechnic</h2>
         <img src={wapoly} alt =""/>
+        <h3>Location : Kpaguri</h3>
+       <h3>GPS : XW-0003-2345</h3>
         </div>
 
         <div className='card'>
         <h2>Nursing Training College Tumu</h2>
         <img src={tumumnursing} alt =""/>
+        <h3>Location : Tumu</h3>
+        <h3>GPS : XW-0003-2345</h3>
         </div>
 
         
@@ -47,17 +56,23 @@ function School() {
         <div className='card'>
         <h2>ST Francis Girls Senior High School</h2>
         <img src={stfrancis} alt =""/>
+        <h3>Location : Jirapa</h3>
+        <h3>GPS : XW-0003-2345</h3>
         </div>
        
 
         <div className='card'>
-        <h2>Nandon Senior High School</h2>
+        <h2>St Micheals Senior High School</h2>
         <img src={NandonSnr} alt =""/>
+        <h3>Location : Nandom</h3>
+        <h3>GPS : XW-0003-2345</h3>
         </div>
 
         <div className='card'>
         <h2>Wa Secondary Senior High school</h2>
         <img src={wasec} alt =""/>
+        <h3>Location : Konta</h3>
+       <h3>GPS : XW-0003-2345</h3>
         </div>
 
 
@@ -66,12 +81,17 @@ function School() {
         <div className='card'>
         <h2>Dan Ibu Internationl School</h2>
         <img src={daanibu} alt =""/>
+        <h3>Location : Kpaguri
+        </h3>
+<h3>GPS : XW-0003-2345</h3>
         </div>
        
 
         <div className='card'>
         <h2>Tender Care International School</h2>
         <img src={tendercare} alt =""/>
+        <h3>Location : Konta</h3>
+<h3>GPS : XW-0003-2345</h3>
         </div>
 
             

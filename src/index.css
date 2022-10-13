@@ -10,6 +10,8 @@
     height: 300px;
     width: 300px;
     margin: 10px;
+    padding: 5%;
+    display: block;
   }
 
 
@@ -20,7 +22,7 @@
   .card{
     display: flex;
     flex-direction: column-reverse;
-    background-color: rgb(236, 181, 113);
+    background-color: ghostwhite;
     width: 500px;
     text-align: center;
     align-content: center;
@@ -30,7 +32,7 @@
     margin: 50px auto;
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 10pxpx;
   }
   .card h2{
     font-size: 20px;
@@ -44,9 +46,15 @@
     font-size: 20px;
     width: 1oopx;
     margin-left: 120px;
-    background-color: darkorange;
-    color: white;
+    background-color: paleturquoise;
+    color: black;
   }
+.names{
+  padding: 10px;
+  color: #000;
+}
+
+
 
   .form{
     width: 100%;
@@ -54,4 +62,28 @@
     display: flex;
     align-content: center;
     align-items: center;
+    border-radius: 20px;
+  }
+
+  
+  .formContainer{
+    display: flex;
+    padding: 5%;
+    background-color:aliceblue;
+    color: black;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+  }
+
+  .but{
+    color: #000;
+  }
+
+  .form-group{
+    border-radius: 20px;
+  }
+
+  h3{
+    color: #000;
   }

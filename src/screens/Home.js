@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import Header from '../components/Header';
+
 import {AuthContext} from '../contex/Auth.context'
 import eatry from '../utils/eatry.jpg';
 import hospital from '../utils/hospital.jpg';
@@ -16,7 +16,7 @@ function Home() {
 
    
       <div>
- <Header/>
+
  <div>
       <div className='firstrow'>
 
@@ -31,7 +31,6 @@ function Home() {
         <div className='card'>
         <h2>hospitals available</h2>
         <img src={hospital} alt =""/>
-        <p>click to see more hospitals available</p>
         <button>
           <Link to={'/hospital'}>view more</Link>
           </button>

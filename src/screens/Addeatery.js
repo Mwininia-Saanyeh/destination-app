@@ -24,14 +24,14 @@ function Addeatry({ submit }) {
   return (
     <>
       
-      <Header />
+  
       <div className="formContainer">
         <h3>Add New Eatery</h3>
         <form>
           <fieldset>
             <legend>Eatery Data</legend>
-            <div className="names">
-              <div className="N">
+            <div className="names form-group">
+              <div className="form-group">
                 <label>
                   Name
                   <input
@@ -43,8 +43,8 @@ function Addeatry({ submit }) {
                 </label>
               </div>
             </div>
-            <div className="names">
-              <div className="W">
+            <div className="names form-group">
+              <div className="">
                 <label>
                   Location
                   <input
@@ -55,7 +55,7 @@ function Addeatry({ submit }) {
                   />
                 </label>
               </div>
-              <div className="Y">
+              <div className="form-group">
                 <label>
                   {" "}
                  Menu
@@ -67,7 +67,7 @@ function Addeatry({ submit }) {
                   />
                 </label>
               </div>
-              <div className="L">
+              <div className="form-group">
                 <label>
                   Address
                   <input
@@ -78,7 +78,7 @@ function Addeatry({ submit }) {
                   />
                 </label>
               </div>
-              <div className="L">
+              <div className="form-group">
                 <label>
                   Contact
                   <input
@@ -91,7 +91,7 @@ function Addeatry({ submit }) {
               </div>
             </div>
           </fieldset>
-          <button className="form" onClick={handleForm}>
+          <button className="btn btn-info" onClick={handleForm}>
             Add an Eatery
           </button>
         </form>

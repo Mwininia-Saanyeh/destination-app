@@ -24,7 +24,7 @@ function Addcommercial({ submit }) {
   return (
     <>
       
-      <Header />
+      
       <div className="formContainer">
         <h3>Add New Commercial Property</h3>
         <form>
@@ -91,7 +91,7 @@ function Addcommercial({ submit }) {
               </div>
             </div>
           </fieldset>
-          <button className="form" onClick={handleForm}>
+          <button className="fbtn btn-btn-secondary" onClick={handleForm}>
             Add a Commercialproperty
           </button>
         </form>

@@ -1,42 +1,44 @@
-import React, { useState } from "react";
- import Footer from "../components/Footer";
-  import Header from "../components/Header";
+import React, {useState}from 'react'
+import Footer from './Footer';
 
-function Addschool({ submit }) {
-  const [school, setSchool] = useState({
-    name: "",
-    location: "",
-    category: "",
-    address: "",
-    contact: "",
-  });
-
-  const handler = (event) => {
-    setSchool((prev) => ({
-      ...prev,
-      [event.target.name]: event.target.value,
-    }));
-  };
-  const handleForm = (e) => {
-    e.preventDefault();
-    submit(school);
-  };
+function Orderform({submit}) {
+    const [orderform, setOrderform] = useState({
+        fullname: "",
+        contact: "",
+        location: "",
+        servicename: "",
+      });
+    
+      const handler = (event) => {
+        setOrderform((prev) => ({
+          ...prev,
+          [event.target.name]: event.target.value,
+        }));
+      };
+      const handleForm = (e) => {
+        e.preventDefault();
+        submit(Orderform);
+      };
   return (
-    <>
+
+    <div>
+        <>
       
       
       <div className="formContainer">
-        <h3>Add New School</h3>
+        <h3>ORDER HERE</h3>
         <form>
           <fieldset>
-            <legend>School data</legend>
+            <legend>After you fill out this order request, we will contact you to verify 
+        the details and availability before the order is completed.
+         We work everyday from 8:30am to 8:30pm</legend>
             <div className="names">
               <div className="N">
                 <label>
-                  Name
+                Are you a new or existing customer?
+
                   <input
                     name="name"
-                    value={school.name}
                     type="text"
                     onChange={handler}
                   />
@@ -46,10 +48,9 @@ function Addschool({ submit }) {
             <div className="names">
               <div className="W">
                 <label>
-                  Location
+                What is the item you would like to order?
                   <input
                     name="location"
-                    value={school.location}
                     type="text"
                     onChange={handler}
                   />
@@ -58,21 +59,20 @@ function Addschool({ submit }) {
               <div className="Y">
                 <label>
                   {" "}
-                 Category
+                  Where do you want your product delivered?
                   <input
-                    name="category"
+                    name="menu"
                     type="type"
-                    value={school.category}
                     onChange={handler}
                   />
                 </label>
               </div>
               <div className="L">
                 <label>
-                  Address
+                Your full name
+
                   <input
                     name="address"
-                    value={school.address}
                     type="text"
                     onChange={handler}
                   />
@@ -80,10 +80,20 @@ function Addschool({ submit }) {
               </div>
               <div className="L">
                 <label>
-                  Contact
+                Any additional information?
+
+                  <input
+                    name="address"
+                    type="text"
+                    onChange={handler}
+                  />
+                </label>
+              </div>
+              <div className="L">
+                <label>
+                  Phone Number
                   <input
                     name="contact"
-                    value={school.contact}
                     type="text"
                     onChange={handler}
                   />
@@ -92,13 +102,14 @@ function Addschool({ submit }) {
             </div>
           </fieldset>
           <button className="btn btn-info" onClick={handleForm}>
-            Add a School
+            Place order
           </button>
         </form>
       </div>
       <Footer />
     </>
-  );
+    </div>
+  )
 }
 
-export default Addschool;
+export default Orderform
